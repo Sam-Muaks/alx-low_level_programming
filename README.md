@@ -1,1 +1,1 @@
-Practice what I learnt on C programming language
+Putting to practice what I've learnt about C variables
