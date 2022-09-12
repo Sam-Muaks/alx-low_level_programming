@@ -23,7 +23,8 @@ int main(void)
 
 				n = rand() - RAND_MAX / 2;
 
-					printf("%s %d is %d and is", n, n % 10);
+					char last
+					printf("%s %d is %d and is" last, n, n % 10);
 					if (n % 10>5)
 					{
 						printf("greater than 5\n");
