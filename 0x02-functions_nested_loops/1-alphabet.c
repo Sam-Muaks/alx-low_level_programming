@@ -1,8 +1,6 @@
 #include "main.h"
 /**
- * main - Entry point
- *
- * Description:prints _putchar using print_alphabet prototype
+ * print_alphabet - prints _putchar using print_alphabet prototype
  *
  * Return:Always 0 (Success)
  */
