@@ -2,6 +2,7 @@
 #include <ctype.h>
 /**
  * _isalpha - checks for alphabetic character
+ * @c: the character being called upon
  *
  * Return: 1 if letter, always 0 (Success)
  */
