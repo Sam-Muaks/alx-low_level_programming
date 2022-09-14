@@ -1,6 +1,8 @@
 #include "main.h"
 /**
- * abs: computes absolute value of an integer
+ * _abs: computes absolute value of an integer
+ *
+ * n - number that contains value
  *
  * Return:Always 0 (Success)
  */
