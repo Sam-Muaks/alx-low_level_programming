@@ -1,14 +1,18 @@
 #include "main.h"
 /**
- * _strlen - returns the length of a character string
+ * _strlen - returns string length
  *
  * @s: string input
  *
- * Return: length of the string
- */
+ * Return: length of string
+*/
 
 int _strlen(char *s)
 {
-	char name[6] = "Mohri";
-	int length = strlen(name);
+        int counter;
+
+        for (counter = 0; *s != '\0'; ++s)
+                ++counter;
+
+        return (counter);
 }
