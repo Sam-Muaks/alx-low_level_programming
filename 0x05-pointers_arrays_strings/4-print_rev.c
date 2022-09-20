@@ -8,10 +8,14 @@
  */
 void print_rev(char *s)
 {
-	char *str;
-
-	s = str
-
-	str = "I do not fear computers. I fear the lack of them";
-	print_rev(str);
+	int i = 0;
+		while (*s(s+i))
+			i++;
+		i = i - 1;
+		while (i>=0)
+		{
+			_putchar(*(s + i));
+			i--;
+		}
+		_putchar('\n');
 }
