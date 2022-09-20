@@ -6,7 +6,10 @@
  */
 void _puts(char *str)
 {
-	char str = "Use code";
-
-		puts(str);
+	if (*str != '\0')                                    
+        {                                                       
+                _putchar(*str + 0);                             
+                ++str;                                          
+        }                                                       
+        _putchar('\n');
 }
