@@ -10,6 +10,8 @@ void print_rev(char *s)
 {
 	char *str;
 
+	s = str
+
 	str = "I do not fear computers. I fear the lack of them";
 	print_rev(str);
 }
