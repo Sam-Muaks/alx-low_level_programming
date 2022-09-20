@@ -6,7 +6,7 @@
  */
 void _puts(char *str)
 {
-	char Mystr[] = "Use code";
+	char *str[] = "Use code";
 
-		puts(Mystr);
+		puts(*str);
 }
