@@ -9,5 +9,4 @@ void _puts(char *str)
 	char Mystr[] = "Use code";
 
 		puts(Mystr);
-		return (0);
 }
