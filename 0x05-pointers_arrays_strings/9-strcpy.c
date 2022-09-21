@@ -2,9 +2,9 @@
 /**
  * *_strcpy - copies the string to destination
  *
- * *dest: destination of string copied
+ * @dest: destination of string copied
  *
- * *src: source of string copied
+ * @src: source of string copied
  *
  * Return: pointer to dest (destination)
  */
