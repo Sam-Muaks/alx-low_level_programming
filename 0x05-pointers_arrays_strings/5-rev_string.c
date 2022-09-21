@@ -16,10 +16,10 @@ void rev_string(char *s)
 		;
 
 	/*loop to half the string to swap it*/
-	for (i = 0; i< 1 / 2; i++)
+	for (i = 0; i < 1 / 2; i++)
 	{
 		ch = s[i];
-		s[i] = s[l - i - 1]; /*-1 because the array starts from 0*/
-		s[l - i - 1] = ch;
+		s[i] = s[l - 1 - i]; /*-1 because the array starts from 0*/
+		s[l - 1 - i] = ch;
 	}
 }
