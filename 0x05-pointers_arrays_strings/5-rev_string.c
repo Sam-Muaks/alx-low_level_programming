@@ -8,21 +8,18 @@
  */
 void rev_string(char *s)
 {
-	/*declaring variables*/
-	int i, len, temp;
-	len = strlen(str1); /*use strlen() to get length of str string*/
+	int l, i;
+	char ch;
 
-	/*for loop is used to iterate the string*/
-	for (i = 0; i < len/2; i++)
-	{
-		/*temp variable is used to temporarily hold the string*/
-		temp = str1[i];
-		str1[i] = str1[len - i - 1];
-		str1[len -i -1] = temp;
-	}
-	{
-		char str[10]; /*size of character string*/
+	/*use for statement to find the string length without null char*/
+	for (l = 0; s[l] != '\0'; l++)
+		;
 
-		rev_string(*s);
+	/*loop to half the string to swap it*/
+	for (i = 0; i< 1 / 2; i++)
+	{
+		ch = s[i];
+		s[i] = s[l - i - 1]; /*-1 because the array starts from 0*/
+		s[l - i - 1] = ch;
 	}
 }
