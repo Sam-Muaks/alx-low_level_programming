@@ -3,94 +3,32 @@
 #include <time.h>
 
 /**
- * main - random password generator for 101-crackme
+ * main - generate random password
  *
- * Return: always 0
+ * Return: returns integer on success
  */
 int main(void)
 {
-	int i, j, k, s;
-	char c[] = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char p[58];
+	int pass[100];
+	int i, count, s;
+
+	count = 0;
 
 	srand(time(NULL));
-	while (s != 2772)
+
+	for (i = 0; i < 100; i++)
 	{
-		i = k = s = 0;
-		while ((2772 - 122) > s)
+		pass[i] = rand() % 78;
+		count += (pass[i] + '0');
+		putchar(pass[i] + '0');
+		if ((2772 - count) - '0' < 78)
 		{
-			j = rand() % 62;
-			p[i] = c[j];
-			s += c[j];
-			i++;
-		}
-		while (c[k])
-		{
-			if (c[k] == (2772 - s))
-			{
-				p[i] = c[k];
-				s += c[k];
-				i++;
-				break;
-			}
-			k++;
+			s = 2772 - count - '0';
+			count += s;
+			putchar(s + '0');
+			break;
 		}
 	}
-	p[i] = '\0';
-	printf("%s", p);
+
 	return (0);
 }
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
