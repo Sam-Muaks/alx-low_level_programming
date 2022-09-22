@@ -5,7 +5,7 @@
  *
  * Return: address location of s
  */
-char *rot13(char *)
+char *rot13(char *s)
 {
 	int i, j;
 	char a[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
