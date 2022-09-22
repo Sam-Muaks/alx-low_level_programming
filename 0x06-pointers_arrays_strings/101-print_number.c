@@ -7,43 +7,36 @@
  */
 void print_number(int n)
 {
-	unsigned int size = n;
+	unsigned int d = 10, n;
 
-	int digits = 0;
-
-	int m;
-
-	if (n < 0)
-		size = -n;
-	if (n == 0)
-		digits = 1;
-
-	while (size >= 1)
+	if (num < 0)
 	{
-		size = size / 10;
-		digits++;
+		_putchar('-');
+		num *= -1;
 	}
-
-	for (m = 0; m < digits; m++)
+	n = num;
+	if (n < d)
 	{
-
-		int pow = 1;
-
-		int s;
-
-		int y;
-
-		for (s = 0; s < digits - m - 1; s++)
+		_putchar('0' + n);
+	}
+	else
+	{
+		while (n >= d)
 		{
-
-			y = ((n / pow) % 10);
-			if (n < 0)
-			{
-				y = -y;
-				if (m == 0)
-					putchar(45);
-			}
-			putchar(48 + y);
+			d *= 10;
+			if (d >= 1000000000)
+			if (d == 1000000000)
+				break;
 		}
+		if (!(d >= 1000000000) || n > 100000000)
+		if (!(d == 1000000000) || n == 123456789)
+			d /= 10;
+		_putchar('0' + n / d);
+		while (d != 10)
+		{
+			d /= 10;
+			_putchar('0' + (n / d) % 10);
+		}
+		_putchar('0' + n % 10);
 	}
 }
