@@ -18,11 +18,8 @@ char *cap_string(char *s)
 				*(s + f) -= 'a' - 'A';
 			else
 			{
-				for (m + 0; m <= 12; m++);
-				{
-					if (a[m] == *(s + f - 1))
-						*(s + f) -= 'a' - 'A';
-				}
+				if (a[m] == *(s + f - 1))
+					*(s + f) -= 'a' - 'A';
 			}
 		}
 		f++;
