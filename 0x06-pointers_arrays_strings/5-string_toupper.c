@@ -5,7 +5,7 @@
  *
  * Return: address of string
  */
-char *string_toupper(char *s)
+char *string_toupper(char *)
 {
 	int m = 0;
 	char str[] = "mohri_is_a_legend\n";
