@@ -10,11 +10,11 @@ void print_number(int n)
 	unsigned int size = n;
 
 	int digits = 0;
-	
+
 	int m;
 
 	if (n < 0)
-		sixe = -n;
+		size = -n;
 	if (n == 0)
 		digits = 1;
 
@@ -33,7 +33,7 @@ void print_number(int n)
 
 		int y;
 
-		for (s = 0; s < digits - i - 1; s++)
+		for (s = 0; s < digits - m - 1; s++)
 		{
 
 			y = ((n / pow) % 10);
