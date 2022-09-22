@@ -41,9 +41,9 @@ void print_number(int n)
 			{
 				y = -y;
 				if (m == 0)
-					_putchar(45);
+					putchar(45);
 			}
-			_putchar(48 + y);
+			putchar(48 + y);
 		}
 	}
 }
