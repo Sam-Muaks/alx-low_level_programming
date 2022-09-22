@@ -5,16 +5,14 @@
  *
  * Return: address of string
  */
-char *string_toupper(char *)
+char *string_toupper(char *s)
 {
 	int m = 0;
-	char str[] = "mohri_is_a_legend\n";
-	char s;
 
-	while (str[m])
+	while (*(s + m)
 	{
-		*(s = str[m]);
-		putchar(*(string_toupper(s)));
+		if (*(s + m) >= 'a' && *(s + i) <= 'z')
+			*(s + i) -= 'a' - 'A';
 		m++;
 	}
 	return (s);
