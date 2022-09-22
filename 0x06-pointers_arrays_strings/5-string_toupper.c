@@ -8,12 +8,14 @@
 char *string_toupper(char *s)
 {
 	int m = 0;
+	char str[] = "mohri_is_a_legend\n";
+	char s;
 
-	while (*(s + m))
+	while (str[m])
 	{
-		if (*(s + m) = 'a' && *(s + m) <= 'z')
-			*(s + m) -= 'a' - 'A';
-		m++;
+		s = str[m];
+		putchar(toupper(s));
+		m++
 	}
 	return (s);
 }
