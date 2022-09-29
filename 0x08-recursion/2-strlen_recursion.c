@@ -2,7 +2,6 @@
 
 /*
  * _strlen_recursion - returns length of string using recursion
- *
  * @s: pointer to the addres of string
  *
  * Return: string length, else return 0
