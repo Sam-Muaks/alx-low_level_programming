@@ -7,7 +7,7 @@
  * Description: this program multiplies two numbers
  *
  * @argc: returns number of arguments
- * @argc: pointer to array of arguments
+ * @argv: pointer to array of arguments
  *
  * Return: 1 (error), else return always 0 (success)
  */
