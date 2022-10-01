@@ -11,7 +11,7 @@
  *
  * Return: Always 0 (success)
  */
-int main(int argc, char *argv [])
+int main(int argc, char *argv[])
 {
 	int m;
 
@@ -21,7 +21,7 @@ int main(int argc, char *argv [])
 	{
 		for (m = 0; *argv; m++, argv++)
 			;
-		printf("%d\n", m - 1):
+		printf("%d\n", m - 1);
 	}
 	return (0);
 }
