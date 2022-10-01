@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 	char *ptr;
 
 	if (argc < 2)
-		printf("%0\n");
+		printf("0\n");
 	else
 	{
 		sum = 0;
@@ -30,13 +30,13 @@ int main(int argc, char *argv[])
 
 			for (s = 0; s < length; s++)
 			{
-				if (isdigit(*(ptr + j)) == 0)
+				if (isdigit(*(ptr + s)) == 0)
 				{
 					printf("Error\n");
 					return (1);
 				}
 			}
-			sum = sum + atoi(argv[m];
+			sum = sum + atoi(argv[m]);
 		}
 		printf("%d\n", sum);
 	}
