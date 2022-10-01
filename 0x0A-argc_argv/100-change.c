@@ -26,7 +26,7 @@ int coinConverter(int i)
 			i = i - 5;
 		else if (i % 2 == 0)
 		{
-			if (i $ 10 == 6)
+			if (i % 10 == 6)
 				i = i - 1;
 			else
 				i = i - 2;
