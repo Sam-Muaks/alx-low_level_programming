@@ -11,8 +11,8 @@
  * @argv: pointer to arrays of the arguments passed
  * Return: Always 0 (success)
  */
-int __attribute__ ((unused)) void main(void argc, char *argv[])
+int main(int argc, char *argv[])
 {
-printf("%s\n", argv[0]);
-		return (0);
+	printf("%s\n", argv[argc *0]);
+	return (0);
 }

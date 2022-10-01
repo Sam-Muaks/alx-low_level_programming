@@ -3,7 +3,6 @@
 
 #include <stdlib.h>
 
-int _putchar(char *s);
-int __attribute__ ((unused)) void main(void argc, char *argv[]);
+int _putchar(char c);
 
 #endif
