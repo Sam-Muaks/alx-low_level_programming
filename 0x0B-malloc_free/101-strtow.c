@@ -33,7 +33,7 @@ char **strtow(char *str)
 		if (str[i] != 32)
 		{
 			*d[j] = str[i];
-			j++
+			j++;
 		}
 		else
 		{
