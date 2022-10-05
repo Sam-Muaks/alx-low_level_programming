@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- * free-grid - frees previously created 2 dimensional grid
- *
+ * free_grid - frees previously created 2 dimensional grid
  * @grid: pointer to location in memory
  * @height: number of rows affected
  *
