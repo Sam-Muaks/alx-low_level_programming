@@ -2,7 +2,6 @@
 
 /*
  * strdup - returns a pointer to a new string which is a duplicate
- * of the string str
  * @str: string being duplicated
  *
  * Return: pointer to duplicated string, null if insufficient memory
