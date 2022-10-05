@@ -1,1 +1,1 @@
-Practical on creating a static library
+Practicals on creating static libraries
