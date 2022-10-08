@@ -1,1 +1,1 @@
-More tasks on memory allocation
+More practicals on memory allocation
