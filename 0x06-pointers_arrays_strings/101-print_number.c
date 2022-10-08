@@ -33,7 +33,7 @@ void print_number(int n)
 	if (s2 != 0)
 		_putchar('0' + a2);
 	if (s3 != 0)
-		_putchar('0' + a3);
+		putchar('0' + a3);
 	if (s4 != 0)
 		_putchar('0' + a4);
 	if (s5 != 0)
