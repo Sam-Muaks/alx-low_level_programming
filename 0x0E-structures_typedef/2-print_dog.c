@@ -7,7 +7,7 @@
  *
  * Return: nothng (void)
  */
-void print_dog(struct dogg *d)
+void print_dog(struct dog *d)
 {
 	if (d != NULL)
 	{
