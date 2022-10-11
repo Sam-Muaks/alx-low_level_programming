@@ -2,7 +2,7 @@
 
 /**
  * print_dog - prints a struct dog
- * @struct dog: structure containing dog's information
+ * @struct dog: structure for dog's information
  * @d: pointer to dog variable
  *
  * Return: nothng (void)
