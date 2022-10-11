@@ -10,12 +10,8 @@
  *
  * Return: the variable d
  */
-void init_dog(struct dog *d, char *name, float age, char *name)
+void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	char name;
-	float age;
-	char name;
-
 	if (d != 0)
 	{
 		d->name = name;
