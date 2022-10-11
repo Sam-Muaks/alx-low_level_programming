@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 0x09. C - Static libraries
 ==========================
 
@@ -261,3 +262,6 @@ julien@ubuntu:~/0x09. Static Librairies$
 -   GitHub repository: `alx-low_level_programming`
 -   Directory: `0x09-static_libraries`
 -   File: `create_static_lib.sh`
+=======
+Practicals on C static libraries
+>>>>>>> c72c2a201cd7883597dc76c4cc15fe301815a230
