@@ -7,27 +7,22 @@
  *
  * Return: nothng (void)
  */
-void print_dog(struct dog *d)
+void print_dog(struct dogg *d)
 {
 	if (d != NULL)
 	{
 		printf("Name: ");
 		if (d->name == NULL)
-			printf("Name: (nil)\n");
-		
+			printf("(nil)\n");
 		else
-
-			printf("Name: %s\n", d->name);
+			printf("%s\n", d->name);
 
 		printf("Age: %f\n", d->age);
 
 		printf("Owner: ");
 		if (d->owner == NULL)
-			printf("Owner: (nil)\n");
-
+			printf("(nil)\n");
 		else
-
-			printf("Owner: %s\n", d->owner);
-		}
+			printf("%s\n", d->owner);
 	}
 }
