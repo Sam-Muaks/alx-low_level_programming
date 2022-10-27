@@ -1,27 +1,6 @@
 #include "main.h"
 
 /**
- *_pow - returns the value of x raised to y
- *
- *@x: base number
- *@y: exponent
- *
- *Return: @x to the @y, if @y < 0 return -1
- */
-int _pow(int x, int y)
-{
-	if (y == 0)
-	{
-		return (1);
-	}
-	if (y < 0)
-	{
-		return (-1);
-	}
-	return (x * _pow(x, y - 1));
-}
-
-/**
  *binary_to_uint - converts a binary number to an unsigned int
  *@b: string containing the binary number
  *Return: Return the converted number, or 0 if the string has a char other than
@@ -29,21 +8,19 @@ int _pow(int x, int y)
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int num = 0;
-	int i, j;
+	unsigned int n = 0;
 
 	if (!b)
 		return (0);
-	for (i = 0; b[i]; i++)
+
+	while (*b)
 	{
-		if (b[i] != '0' && b[i] != '1')
+		n <<= 1;
+		if (*b == '1')
+			n += 1;
+		else if (*b != '0')
 			return (0);
+		++b;
 	}
-	i--;
-	for (j = 0; i >= 0; i--, j++)
-	{
-		if (b[i] == '1')
-			num += _pow(2, j);
-	}
-	return (num);
+	return (n);
 }
