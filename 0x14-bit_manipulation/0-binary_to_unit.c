@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *_pow - returns the value of x raised to the power of y
+ *_pow - returns the value of x raised to y
  *
  *@x: base number
  *@y: exponent
