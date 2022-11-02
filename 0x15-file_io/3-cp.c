@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * err_cls - prints error for close condition
- * @file: file that couldn't be closed
- * Return: nothing
+ *err_cls - prints error for close condition
+ *@file: file that couldn't be closed
+ *Return: nothing
  */
 void err_cls(char *file)
 {
@@ -12,12 +12,12 @@ void err_cls(char *file)
 }
 
 /**
- * main - Entry point of program
- * Description: copies the content of a file to another file
- * Usage: cp file_from file_to
- * @argc: amount of arguments
- * @argv: array holding each argument passed
- * Return: 0
+ *main - Entry point of program
+ *Description: copies the content of a file to another file
+ *Usage: cp file_from file_to
+ *@argc: amount of arguments
+ *@argv: array holding each argument passed
+ *Return: 0
  */
 int main(int argc, char **argv)
 {
@@ -38,7 +38,7 @@ int main(int argc, char **argv)
 	f2 = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	if (f2 == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't write to%s\n", argv[2]);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
 	}
 	while ((r_cnt = read(f1, buffer, sizeof(buffer))) > 0)
