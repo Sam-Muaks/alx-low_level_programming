@@ -9,25 +9,27 @@
  *@argv: argument vectors
  *Return: 0
  */
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-	int n, i;
-	int (*ptr)(int, char **);
+	int b;
+	char *mem = (char *) main;
 
 	if (argc != 2)
 	{
 		printf("Error\n");
 		exit(1);
 	}
-	n = atoi(argv[1]);
-	if (n < 0)
+
+	b = atoi(argv[1]);
+
+	if (b < 0)
 	{
 		printf("Error\n");
 		exit(2);
 	}
-	ptr = &main;
-	for (i = 0; i < n; i++)
-		printf("%.2x ", *((unsigned char *)(ptr + i)));
-	printf("\n");
+
+	while (b--)
+		printf("%02x%c", *mem++ & 0xff, b ? ' ' : '\n');
+
 	return (0);
 }
